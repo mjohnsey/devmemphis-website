@@ -9,11 +9,10 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const siteDescription = data.site.siteMetadata.description
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle} description={siteDescription}>
+      <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -49,7 +48,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        description
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
