@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class Meetups extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -41,7 +41,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default Meetups
 
 export const pageQuery = graphql`
   query {
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { collection: { eq: "blog" } }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { collection: { eq: "meetups" } }) {
       edges {
         node {
           excerpt

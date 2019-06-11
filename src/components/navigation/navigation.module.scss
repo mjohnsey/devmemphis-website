@@ -1,0 +1,25 @@
+$color-primary: #0084B4;
+$color-secondary: darken($color-primary, 10%);
+$white: #fff;
+
+.siteNavigation {
+  background: $color-secondary;
+  color: $white;
+
+  nav {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}
+
+.navLink {
+  display: inline-block;
+  color: $white;
+  box-shadow: none;
+  padding:.5em;
+
+  &:hover {
+    background:$color-primary;
+  }
+}
