@@ -7,7 +7,6 @@ import headerStyles from "./header.module.scss"
 
 class Header extends React.Component {
   render() {
-    console.log('props', this.props)
     const { title, description } = this.props.siteMetadata
 
     return (

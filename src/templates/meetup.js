@@ -9,11 +9,10 @@ import { rhythm, scale } from "../utils/typography"
 class MeetupTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <div>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -35,7 +34,6 @@ class MeetupTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
 
         <ul
           style={{
@@ -61,7 +59,7 @@ class MeetupTemplate extends React.Component {
             )}
           </li>
         </ul>
-      </Layout>
+      </div>
     )
   }
 }
@@ -72,7 +70,6 @@ export const pageQuery = graphql`
   query MeetupBySlug($slug: String!) {
     site {
       siteMetadata {
-        title
         author
       }
     }

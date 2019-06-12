@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const moment = require('moment');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -57,11 +58,26 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
+    const date = node.date;
     createNodeField({
       name: `slug`,
       node,
       value,
     })
+
+    node.timestamp = +moment(node.frontmatter.date).format('X')
     node.collection = getNode(node.parent).sourceInstanceName;
   }
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      today: +moment().format('X'),
+    },
+  })
 }

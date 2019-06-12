@@ -2,19 +2,27 @@ module.exports = {
   siteMetadata: {
     title: `DevMemphis`,
     author: `George Spake`,
-    description: `A Meetup for Memphis Software Developers.`,
+    description: `A Meetup for Memphis Software Developers`,
     siteUrl: `https://devmemphis.org/`,
     social: {
       twitter: `devmemphis`,
     },
-    menuLinks:[
+    menuLinks: [
       {
-         name:'home',
-         link:'/'
+        name: 'Home',
+        link: '/'
       },
       {
-         name:'blog',
-         link:'/blog'
+        name: 'Blog',
+        link: '/blog'
+      },
+      {
+        name: 'Meetups',
+        link: '/meetups'
+      },
+      {
+        name: 'About',
+        link: '/about'
       }
     ]
   },
@@ -86,6 +94,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-layout`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

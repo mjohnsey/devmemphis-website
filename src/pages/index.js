@@ -1,72 +1,33 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Posts from "../components/posts"
+import Meetups from "../components/meetups"
 
 class HomePage extends React.Component {
+  
   render() {
-    console.log('props', this.props)
     const { data } = this.props
     const posts = data.posts.edges
-    const meetups = data.meetups.edges
+    const nextMeetup = data.nextMeetup.edges
+    const pastMeetups = data.pastMeetups.edges
 
     return (
-      <Layout>
-        <SEO title="All posts" />
+      <div>
+        <SEO title="DevMemphis - A Meetup for Memphis Software Developers" />
 
-        <h2>Upcoming Meetups</h2>
+        {nextMeetup.length > 0 && <h2>Next Meetup</h2>}
+        {nextMeetup.length > 0 && <Meetups meetups={nextMeetup} />}
 
-        {meetups.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+        <h2>Past Meetups</h2>
+        <Meetups meetups={pastMeetups} />
+        <Link to="/meetups">All Meetups</Link>
 
         <h2>Recent Posts</h2>
-
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
-
-      </Layout>
+        <Posts posts={posts} />
+        <Link to="/meetups">All Posts</Link>
+      </div>
     )
   }
 }
@@ -74,8 +35,12 @@ class HomePage extends React.Component {
 export default HomePage
 
 export const pageQuery = graphql`
-  query {
-    posts: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { collection: { eq: "blog" } }) {
+  query($today: Int) {
+    posts: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }, 
+      filter: { 
+        collection: { eq: "blog" }
+      }) {
       edges {
         node {
           excerpt
@@ -90,7 +55,36 @@ export const pageQuery = graphql`
         }
       }
     }
-    meetups: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { collection: { eq: "meetups" } }) {
+    nextMeetup: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: ASC }, 
+      filter: { 
+        collection: { eq: "meetups" },
+        timestamp: {gt: $today}
+      },
+      limit:1
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+    pastMeetups: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }, 
+      filter: { 
+        collection: { eq: "meetups" },
+        timestamp: {lt: $today}
+      },
+      limit: 2
+    ) {
       edges {
         node {
           excerpt
