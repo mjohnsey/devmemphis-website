@@ -7,6 +7,7 @@ import { rhythm } from "../utils/typography"
 
 class HomePage extends React.Component {
   render() {
+    console.log('props', this.props)
     const { data } = this.props
     const posts = data.posts.edges
     const meetups = data.meetups.edges
