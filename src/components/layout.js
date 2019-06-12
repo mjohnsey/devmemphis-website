@@ -5,11 +5,11 @@ import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, description, children } = this.props
+    const { children } = this.props
 
     return (
       <React.Fragment>
-        <Header location={location} title={title} description={description} />
+        <Header />
         <div
           style={{
             marginLeft: `auto`,
@@ -18,7 +18,6 @@ class Layout extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built with
@@ -27,8 +26,6 @@ class Layout extends React.Component {
           </footer>
         </div>
       </React.Fragment>
-
-
     )
   }
 }

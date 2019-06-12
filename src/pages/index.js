@@ -5,16 +5,43 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class HomePage extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const siteDescription = data.site.siteMetadata.description
-    const posts = data.allMarkdownRemark.edges
+    const posts = data.posts.edges
+    const meetups = data.meetups.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle} description={siteDescription}>
+      <Layout>
         <SEO title="All posts" />
+
+        <h2>Upcoming Meetups</h2>
+
+        {meetups.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+          )
+        })}
+
+        <h2>Recent Posts</h2>
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -37,22 +64,32 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+
       </Layout>
     )
   }
 }
 
-export default BlogIndex
+export default HomePage
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-        description
+    posts: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { collection: { eq: "blog" } }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { collection: { eq: "blog" } }) {
+    meetups: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { collection: { eq: "meetups" } }) {
       edges {
         node {
           excerpt

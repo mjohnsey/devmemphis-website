@@ -1,75 +1,56 @@
 import React from 'react'
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import Navigation from "../navigation/navigation"
 
 import { scale } from "../../utils/typography"
 import headerStyles from "./header.module.scss"
 
-const HomePageHeader = props => {
-  const { title, description } = props
-  return (
-    <header className={headerStyles.homepageHeader}>
-        <img className={headerStyles.logo} src="/devmemphis-logo.svg" alt="DevMemphis Logo"/>
-        <h1
-          style={{
-            ...scale(1.5),
-            margin: 0,
-          }}
-        >
-          <Link
+class Header extends React.Component {
+  render() {
+    console.log('props', this.props)
+    const { title, description } = this.props.siteMetadata
+
+    return (
+      <React.Fragment>
+        <header className={headerStyles.siteHeader}>
+          <img className={headerStyles.logo} src="/devmemphis-logo.svg" alt="DevMemphis Logo"/>
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              ...scale(1.5),
+              margin: 0,
             }}
-            to={`/`}
           >
-            {title}
-          </Link>
-        </h1>
-        <h2 className="siteDescription">{description}</h2>
-      </header>
-  )
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h1>
+          <h2 className="siteDescription">{description}</h2>
+        </header>
+        <Navigation />
+      </React.Fragment>
+    )
+  }
 }
 
-const CommonHeader = props => {
-  const { title } = props
-  
-  return (
-    <header className={headerStyles.commonHeader}>
-    <h3
-      style={{
-        fontFamily: `Montserrat, sans-serif`,
-        marginTop: 0,
-      }}
-    >
-      <Link
-        style={{
-          boxShadow: `none`,
-          textDecoration: `none`,
-          color: `inherit`,
-        }}
-        to={`/`}
-      >
-        {title}
-      </Link>
-    </h3>
-    </header>
-  )
-}
-
-const Header = props => {
-  const rootPath = `${__PATH_PREFIX__}/`
-
-  const header = props.location.pathname === rootPath ? <HomePageHeader {...props}/> : <CommonHeader {...props} />
-
-  return (
-    <React.Fragment>
-      {header}
-      <Navigation />
-    </React.Fragment>
-  )
-
-}
-
-export default Header
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    `}
+    render={data => <Header siteMetadata={data.site.siteMetadata} />}
+  />
+)
