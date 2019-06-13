@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./header/header"
+import Footer from "./footer/footer"
 
 import { rhythm } from "../utils/typography"
 
@@ -8,10 +9,17 @@ class Layout extends React.Component {
     const { children } = this.props
 
     return (
-      <React.Fragment>
+      <div
+          style={{
+            display: `flex`,
+            minHeight: `100vh`,
+            flexDirection: `column`
+          }}
+        >
         <Header />
         <div
           style={{
+            flex: 1,
             marginLeft: `auto`,
             marginRight: `auto`,
             maxWidth: rhythm(24),
@@ -19,13 +27,9 @@ class Layout extends React.Component {
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-          {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
-      </React.Fragment>
+        <Footer />
+      </div>
     )
   }
 }

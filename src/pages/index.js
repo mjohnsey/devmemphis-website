@@ -26,7 +26,7 @@ class HomePage extends React.Component {
 
         <h2>Recent Posts</h2>
         <Posts posts={posts} />
-        <Link to="/meetups">All Posts</Link>
+        <Link to="/blog">All Posts</Link>
       </div>
     )
   }

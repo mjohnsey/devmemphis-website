@@ -1,0 +1,19 @@
+$color-primary: #0084b4;
+$color-secondary: darken($color-primary, 10%);
+$white: #fff;
+
+.siteFooter {
+  background: $color-secondary;
+
+  :global .content {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: $white;
+
+    p {
+      margin-bottom: 0;
+      line-height: 50px
+    }
+  }
+}
