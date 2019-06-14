@@ -57,16 +57,26 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    const date = node.date;
+    
+    node.timestamp = +moment(node.frontmatter.date).format('X')
+    node.collection = getNode(node.parent).sourceInstanceName;
+
+    let slug = createFilePath({ node, getNode })
+    let basePath = ``
+
+    if (node.collection === "blog") {
+      basePath = `/blog`
+    }
+
+    if (node.collection === "meetups") {
+      basePath = `/meetups`
+    }
+
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: `${basePath}${slug}`,
     })
-
-    node.timestamp = +moment(node.frontmatter.date).format('X')
-    node.collection = getNode(node.parent).sourceInstanceName;
   }
 }
 
