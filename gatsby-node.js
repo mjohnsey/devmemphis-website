@@ -6,12 +6,41 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const meetupPost = path.resolve(`./src/templates/meetup.js`)
+
   return graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
+        posts: allMarkdownRemark(
+          sort: { 
+            fields: [frontmatter___date], 
+            order: DESC 
+          }
+          limit: 1000,
+          filter: { 
+            collection: { eq: "blog" } 
+          }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
+        meetups: allMarkdownRemark(
+          sort: { 
+            fields: [frontmatter___date], 
+            order: DESC 
+          }
+          limit: 1000,
+          filter: { 
+            collection: { eq: "meetups" } 
+          }
         ) {
           edges {
             node {
@@ -31,9 +60,10 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.posts.edges
+    const meetups = result.data.meetups.edges
 
+    // Create blog posts pages.
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
@@ -49,6 +79,22 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
+    // Create meetup posts pages.
+    meetups.forEach((meetup, index) => {
+      const previous = index === meetups.length - 1 ? null : meetups[index + 1].node
+      const next = index === 0 ? null : meetups[index - 1].node
+
+      createPage({
+        path: meetup.node.fields.slug,
+        component: meetupPost,
+        context: {
+          slug: meetup.node.fields.slug,
+          previous,
+          next,
+        },
+      })
+    })
+
     return null
   })
 }
@@ -57,7 +103,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    
+
     node.timestamp = +moment(node.frontmatter.date).format('X')
     node.collection = getNode(node.parent).sourceInstanceName;
 
