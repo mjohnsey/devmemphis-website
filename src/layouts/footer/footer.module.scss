@@ -1,9 +1,10 @@
 $color-primary: #0084b4;
-$color-secondary: darken($color-primary, 10%);
+$color-secondary: #2f537b;
 $white: #fff;
 
 .siteFooter {
   background: $color-secondary;
+  text-align: center;
 
   :global .content {
     max-width: 40rem;
