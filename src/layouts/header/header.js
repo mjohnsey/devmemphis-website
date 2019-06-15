@@ -4,6 +4,7 @@ import Navigation from "../navigation/navigation"
 
 import { scale } from "../../utils/typography"
 import headerStyles from "./header.module.scss"
+import logo from "../../../content/assets/devmemphis-logo.svg"
 
 class Header extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class Header extends React.Component {
     return (
       <React.Fragment>
         <header className={headerStyles.siteHeader}>
-          <img className={headerStyles.logo} src="/devmemphis-logo.svg" alt="DevMemphis Logo"/>
+          <img className={headerStyles.logo} src={logo} alt="DevMemphis Logo"/>
           <h1
             style={{
               ...scale(1.5),
