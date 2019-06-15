@@ -21,7 +21,7 @@ class About extends React.Component {
         </p>
 
 
-        <h3>Join the Memphis Tech Community</h3>
+        <h2>Join the Memphis Tech Community</h2>
         <p>To learn more about the amazing tech community in Memphis and find out about other events like DevMemphis, visit <a href="https://MemphisTechnology.org/">MemphisTechnology.org</a>, follow <a href="https://twitter.com/memtech">@memtech</a> on twitter, and check out <a href="https://www.gatsbyjs.org/">Memphis Technology User Groups</a> on meetup.com.
         </p>
 
@@ -29,7 +29,7 @@ class About extends React.Component {
           Also check out <a href="http://tech901.org/">Tech 901</a>, <a href="https://codeconnective.com/">Code Connector</a>, and <a href="https://www.code-crew.org/">Code Crew</a>
         </p>
 
-        <h3>Contribute to this site</h3>
+        <h2>Contribute to this site</h2>
         <p>See something wrong? Want to make something prettier? This site is built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and hosted on <a href="http://github.com/devmemphis/website">Github</a>. We accept pull requests.</p>
 
       </div>

@@ -16,6 +16,8 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
+              <h2>DevMemphis Blog</h2>
+
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),

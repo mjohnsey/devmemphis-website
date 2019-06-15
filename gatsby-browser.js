@@ -1,3 +1,5 @@
-// custom typefaces
-import "typeface-montserrat"
+import "typeface-teko"
+import "typeface-jaldi"
+import "typeface-open-sans"
 import "typeface-merriweather"
+import "typeface-montserrat"

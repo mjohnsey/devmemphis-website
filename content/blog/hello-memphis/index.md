@@ -8,5 +8,5 @@ Welcome to our shiny new website.
 
 Find out [what DevMemphis is all about](/about), keep up with [DevMemphis news](/blog), and read about upcoming and past [DevMemphis meetups](/meetups).
 
-### Contribute to this site
+## Contribute to this site
 See something wrong? Want to make something prettier? This site is built with [Gatsby](https://www.gatsbyjs.org/) and hosted on [Github](http://github.com/devmemphis/website). We accept pull requests

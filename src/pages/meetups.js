@@ -12,6 +12,9 @@ class Meetups extends React.Component {
     return (
       <div>
         <SEO title="All posts" />
+
+        <h2>DevMemphis Meetups</h2>
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
