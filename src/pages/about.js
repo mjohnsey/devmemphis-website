@@ -14,17 +14,23 @@ class About extends React.Component {
 
         <p>DevMemphis is a general purpose programming usergroup founded in 2018 <i>by</i> Memphis software developers <i>for</i> Memphis software developers.</p>
 
-        <p>While many user groups focus on a narrow topic like a development tool or a programming language, DevMemphis aims
-            to accomodate a variety of topics and formats.
+        <p>While many user groups focus on a narrow topic like a development tool or a programming language, DevMemphis aims to accomodate a variety of topics and formats.
         </p>
 
-        <p>DevMemphis meets on the first Tuesday of each month at the Fedex Institute of Technology (FIT) 
-            on the university of Memphis Campus and is free and open to anyone interested in attending.
+        <p>DevMemphis meets on the first Tuesday of each month at the <a href="https://www.memphis.edu/fedex/">Fedex Institute of Technology (FIT)</a> on the university of Memphis Campus and is free and open to anyone interested in attending.
         </p>
 
-        <p>To learn more about the amazing tech community in Memphis and find out about other events like DevMemphis,
-            visit MemphisTechnology.org, follow @memtech on twitter, and check out Memphis Technology User Groups on meetup.com.
+
+        <h3>Join the Memphis Tech Community</h3>
+        <p>To learn more about the amazing tech community in Memphis and find out about other events like DevMemphis, visit <a href="https://MemphisTechnology.org/">MemphisTechnology.org</a>, follow <a href="https://twitter.com/memtech">@memtech</a> on twitter, and check out <a href="https://www.gatsbyjs.org/">Memphis Technology User Groups</a> on meetup.com.
         </p>
+
+        <p>
+          Also check out <a href="http://tech901.org/">Tech 901</a>, <a href="https://codeconnective.com/">Code Connector</a>, and <a href="https://www.code-crew.org/">Code Crew</a>
+        </p>
+
+        <h3>Contribute to this site</h3>
+        <p>See something wrong? Want to make something prettier? This site is built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and hosted on <a href="http://github.com/devmemphis/website">Github</a>. We accept pull requests.</p>
 
       </div>
     )
