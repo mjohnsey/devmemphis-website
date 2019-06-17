@@ -1,6 +1,7 @@
 ---
 title: Text Editor Show & Tell
 date: "2019-02-05T22:12:03.284Z"
+meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyzdbhb/"
 ---
 
 Thor wielded a mighty hammer, Great musicians employ their craft with the help of musical instruments.
@@ -18,5 +19,3 @@ In the interest of time, we’ll limit presentations to 10 minutes (if you only 
 
 Food and drinks will be provided by @VacoMemphis
 Contact Bob at bburditt@vaco.com to find out about career opportunities in the Memphis area
-
-[Meetup](https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyzdbhb/)
