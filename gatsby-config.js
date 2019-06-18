@@ -78,6 +78,7 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
