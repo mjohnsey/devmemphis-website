@@ -7,15 +7,15 @@ import { rhythm } from "../utils/typography"
 class Meetups extends React.Component {
   render() {
     const { data } = this.props
-    const posts = data.allMarkdownRemark.edges
+    const meetups = data.allMarkdownRemark.edges
 
     return (
       <div>
-        <SEO title="All posts" />
+        <SEO title="All meetups" />
 
         <h2>DevMemphis Meetups</h2>
 
-        {posts.map(({ node }) => {
+        {meetups.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
