@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <SEO title="All posts" />
+        <SEO title="DevMemphis Blog" />
 
         <h2>DevMemphis Blog</h2>
 

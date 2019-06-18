@@ -11,7 +11,7 @@ class MeetupsPage extends React.Component {
 
     return (
       <div>
-        <SEO title="All meetups" />
+        <SEO title="DevMemphis Meetups" />
 
         <h2>DevMemphis Meetups</h2>
         <Meetups meetups={meetups} />
