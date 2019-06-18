@@ -1,7 +1,7 @@
 ---
 title: Hello Memphis! DevMemphis has a Website
 date: "2019-06-12T22:12:03.284Z"
-description: Welcome to our new website
+description: Welcome to our new website. Find out what DevMemphis is all about, keep up with DevMemphis news, and read about upcoming and past DevMemphis meetups.
 ---
 
 Welcome to our shiny new website. 
