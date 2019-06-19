@@ -20,13 +20,13 @@ Wordpress2016.overrideThemeStyles = () => {
       fontWeight: 500
     },
     "h3,h3 a" : {
-      fontFamily: 'teko',
+      fontFamily: "'antonio bold', sans-serif",
       fontWeight: 300
     },
     "h3 a" : {
-      fontFamily: 'teko',
+      fontFamily: "'antonio bold', sans-serif",
       fontWeight: 300,
-      fontSize: '1.3em'
+      fontSize: '1.1em'
     },
     "small" : {
       fontFamily: 'open sans'
