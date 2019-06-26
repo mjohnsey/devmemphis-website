@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "devmemphis",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A meetup for Memphis Software Developers",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "George Spake <gpspake@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/devmemphis/website/issues"
   },
   "dependencies": {
     "gatsby": "^2.8.6",
@@ -45,15 +45,15 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://devmemphis.org",
   "keywords": [
-    "gatsby"
+    "devmemphis, memtech"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/devmemphis/website.git"
   },
   "scripts": {
     "build": "gatsby build",
