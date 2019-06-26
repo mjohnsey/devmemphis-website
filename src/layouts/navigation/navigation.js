@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, StaticQuery } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import navigationStyles from "./navigation.module.scss"
 import { Location } from '@reach/router';
 
