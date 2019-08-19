@@ -7,6 +7,7 @@ module.exports = {
     social: {
       twitter: `devmemphis`,
     },
+    defaultImage: '/devmemphis-pic.png',
     menuLinks: [
       {
         name: 'Home',
