@@ -5,8 +5,9 @@ description: "Great, you've secured your website. But is it really secure? Join 
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyzpbhb/"
 ---
 
-Presenters:  
-MJB
+Presenter:
+Matthew Bledsoe
+Software Engineer [St Jude Children's Research Hospital](https://stjude.org)
 
 Come hang out and eat pizza with Memphis developers.
 
