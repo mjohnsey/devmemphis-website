@@ -1,7 +1,8 @@
 ---
-title: "Modern Software Development Frameworks"
+title: "Modern Software Development Frameworks - The Beautiful Lie: Devops, Agile, and Missing Promises"
 date: "2020-02-04T22:12:03.284Z"
-description: "Presenter: Harold Schreckengost - Getting the most out of the promises of modern frameworks like DevOps, Agile, and Microservices"
+description: "Presenter: Harold Schreckengost - How to get the most out of the promises of modern frameworks like DevOps, Agile, and Microservices by exploring the problems being solved and asking the right questions.
+"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybcdbgb/"
 ---
 
