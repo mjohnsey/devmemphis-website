@@ -31,7 +31,7 @@ class HomePage extends React.Component {
         <p>
           DevMemphis is sponsored by{" "}
           <a href="https://twitter.com/VacoMemphis">Vaco Memphis</a>. Looking
-          for a job in the Memphis Area? Visit{" "}
+          for a job in the Memphis Area? Visit&nbsp;
           <a href="https://www.vaco.com/recruiting-office-locations/memphis-tennessee-recruiting/">
             vaco.com
           </a> or email bob@vaco.com
