@@ -1,5 +1,5 @@
 ---
-title: #21 "WordPress up and running using Amazon Web Services"
+title: "21. WordPress up and running using Amazon Web Services"
 date: "2020-08-04T22:12:03.284Z"
 description: "Getting a WordPress site up and running using Amazon Web Services from scratch."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybclbgb/"
