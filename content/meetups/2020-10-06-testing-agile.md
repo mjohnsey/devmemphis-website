@@ -1,5 +1,5 @@
 ---
-title: "Testing and Agile: Academic to Practical"
+title: #23 "Testing and Agile: Academic to Practical"
 date: "2020-10-06T22:12:03.284Z"
 description: "Waterfall development processes provide guidelines and guardrails to aid in producing quality software. Much like training wheels on a bike or speed governor on a sports car, these aids can prevent the system from reaching maximum capability. Agile projects may remove some of the impediments to performance, but at the same time increase the risk of software defects. Thus testing becomes a critical component for successful agile development."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybcnbjb/"

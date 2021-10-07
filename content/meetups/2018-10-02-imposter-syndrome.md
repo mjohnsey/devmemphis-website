@@ -1,5 +1,5 @@
 ---
-title: Imposter Syndrome
+title: #2 Imposter Syndrome
 date: "2018-10-02T22:12:03.284Z"
 description: "This month at DevMemphis user group, Harold Schreckengost will be giving a talk about imposter syndrome, a topic relevant not just to devs but to anyone who’s passionate about what they do."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyxnbdb/"

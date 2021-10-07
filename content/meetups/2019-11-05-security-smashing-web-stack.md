@@ -1,5 +1,5 @@
 ---
-title: "Smashing the (Web)Stack for Fun (But Not Profit Because That Is Illegal)"
+title: #13 "Smashing the (Web)Stack for Fun (But Not Profit Because That Is Illegal)"
 date: "2019-11-05T22:12:03.284Z"
 description: "Presenter: Matthew Bledsoe - Great, you've secured your website. But is it really secure? Join us for a hands on demonstration of open source vulnerability assessment tools."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyzpbhb/"

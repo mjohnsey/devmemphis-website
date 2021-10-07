@@ -1,5 +1,5 @@
 ---
-title: Text Editor Show & Tell
+title: #4 Text Editor Show & Tell
 date: "2019-02-05T22:12:03.284Z"
 description: "This month at DevMemphis, share your favorite features, customizations, tips and tricks of your preferred text editor or IDE."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyzdbhb/"
