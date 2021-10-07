@@ -1,5 +1,5 @@
 ---
-title: #19 "Show and Tell"
+title: "19. Show and Tell"
 date: "2020-06-02T22:12:03.284Z"
 description: "Share what you're working on"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybcjbdb/"

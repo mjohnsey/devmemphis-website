@@ -1,5 +1,5 @@
 ---
-title: #26 "Make incredible maps using the Speedtest by Ookla Global Network Performance datasets"
+title: "26. Make incredible maps using the Speedtest by Ookla Global Network Performance datasets"
 date: "2021-02-02T22:12:03.284Z"
 description: "Dylan Ledbetter will lead a conversation on how to make incredible maps using the Speedtest by Ookla Global Network Performance datasets now available on the AWS Open Data Registry"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklryccdbdb/"
