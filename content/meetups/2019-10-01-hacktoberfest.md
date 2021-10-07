@@ -1,5 +1,5 @@
 ---
-title: "Get started with OSS - Hacktoberfest"
+title: #12 "Get started with OSS - Hacktoberfest"
 date: "2019-10-01T22:12:03.284Z"
 description: "Joe Ferguson & Xavier Tilley will be leading an open source hack night. Learn everything you need to know about contributing to open source software, including how to find projects to contribute to, GitHub basics, and some burnout prevention tips."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyznbcb/"
