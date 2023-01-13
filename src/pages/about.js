@@ -26,7 +26,7 @@ class About extends React.Component {
         </p>
 
         <p>
-          Also check out <a href="http://tech901.org/">Tech 901</a>, <a href="https://codeconnective.com/">Code Connector</a>, and <a href="https://www.code-crew.org/">Code Crew</a>
+          Also check out <a href="http://tech901.org/">Tech 901</a>, <a href="https://codeconnector.io//">Code Connector</a>, and <a href="https://www.code-crew.org/">Code Crew</a>
         </p>
 
         <h2>Contribute to this site</h2>
