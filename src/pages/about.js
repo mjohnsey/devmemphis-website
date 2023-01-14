@@ -22,7 +22,7 @@ class About extends React.Component {
 
 
         <h2>Join the Memphis Tech Community</h2>
-        <p>To learn more about the amazing tech community in Memphis and find out about other events like DevMemphis, visit <a href="https://MemphisTechnology.org/">MemphisTechnology.org</a>, follow <a href="https://twitter.com/memtech">@memtech</a> on twitter, and check out <a href="https://www.gatsbyjs.org/">Memphis Technology User Groups</a> on meetup.com.
+        <p>To learn more about the amazing tech community in Memphis and find out about other events like DevMemphis, visit <a href="https://MemphisTechnology.org/">MemphisTechnology.org</a>, follow <a href="https://twitter.com/memtech">@memtech</a> on twitter, and check out <a href="https://www.meetup.com/memphis-technology-user-groups/">Memphis Technology User Groups</a> on meetup.com.
         </p>
 
         <p>
