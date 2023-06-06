@@ -22,11 +22,11 @@ class About extends React.Component {
 
 
         <h2>Join the Memphis Tech Community</h2>
-        <p>To learn more about the amazing tech community in Memphis and find out about other events like DevMemphis, visit <a href="https://MemphisTechnology.org/">MemphisTechnology.org</a>, follow <a href="https://twitter.com/memtech">@memtech</a> on twitter, and check out <a href="https://www.gatsbyjs.org/">Memphis Technology User Groups</a> on meetup.com.
+        <p>To learn more about the amazing tech community in Memphis and find out about other events like DevMemphis, visit <a href="https://MemphisTechnology.org/">MemphisTechnology.org</a>, follow <a href="https://twitter.com/memtech">@memtech</a> on twitter, and check out <a href="https://www.meetup.com/memphis-technology-user-groups/">Memphis Technology User Groups</a> on meetup.com.
         </p>
 
         <p>
-          Also check out <a href="http://tech901.org/">Tech 901</a>, <a href="https://codeconnective.com/">Code Connector</a>, and <a href="https://www.code-crew.org/">Code Crew</a>
+          Also check out <a href="http://tech901.org/">Tech 901</a>, <a href="https://codeconnector.io//">Code Connector</a>, and <a href="https://www.code-crew.org/">Code Crew</a>
         </p>
 
         <h2>Contribute to this site</h2>
