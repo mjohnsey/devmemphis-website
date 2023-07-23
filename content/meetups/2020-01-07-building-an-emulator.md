@@ -1,8 +1,10 @@
 ---
-title: "14. Building an Emulator"
+slug: "2020-02-04-modern-frameworks"
+title: "Building an Emulator"
 date: "2020-01-07T22:12:03.284Z"
 description: "Presenter: Cameron Roe - How emulators work and how to build them"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybccbkb/"
+meetupNumber: "14"
 ---
 
 Presenter:

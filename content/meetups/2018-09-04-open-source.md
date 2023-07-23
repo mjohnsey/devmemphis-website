@@ -1,8 +1,10 @@
 ---
-title: "1. DevMemphis - A new Meetup for Memphis Software Developers - Tech Community and Open Source"
+slug: "2018-09-04-open-source"
+title: "DevMemphis - A new Meetup for Memphis Software Developers - Tech Community and Open Source"
 date: "2018-09-04T22:12:03.284Z"
 description: "The inaugural devMemphis meetup! George Spake will speak briefly about the Memphis Tech community and Joe Ferguson Will be giving a talk about maintaining a popular open source project."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/nndddqyxmbgb/"
+meetupNumber: "1"
 ---
 
 The inaugural devMemphis meetup!

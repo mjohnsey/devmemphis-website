@@ -1,8 +1,10 @@
 ---
-title: "17. Amazon Redshift"
+slug: "2020-04-07-amazon-redshift"
+title: "Amazon Redshift"
 date: "2020-04-07T22:12:03.284Z"
 description: "Presenter: Bryce Sharp - What is Amazon Redshift"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybcgbkb/"
+meetupNumber: "17"
 ---
 
 Presenter:  

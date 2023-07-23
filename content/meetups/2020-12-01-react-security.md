@@ -1,8 +1,10 @@
 ---
-title: "25. 10 React Security Implications You Need to Consider"
+slug: "2020-12-01-react-security"
+title: "10 React Security Implications You Need to Consider"
 date: "2020-12-01T22:12:03.284Z"
 description: "10 React Security Implications You Need to Consider"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybcqbcb/"
+meetupNumber: "25"
 ---
 
 Presenter: James Quick
