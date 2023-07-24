@@ -1,5 +1,1 @@
-import "typeface-teko"
-import "typeface-jaldi"
-import "typeface-open-sans"
-import "typeface-merriweather"
-import "typeface-montserrat"
+import "./src/styles/global.css";
