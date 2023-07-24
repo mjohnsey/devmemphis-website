@@ -1,8 +1,10 @@
 ---
-title: "22. Keeping your Serverless API DRY"
+slug: "2020-09-01-serverless-dry"
+title: "Keeping your Serverless API DRY"
 date: "2020-09-01T22:12:03.284Z"
 description: "DeployBoard's API Management Evolution - Managing DeployBoard's Serverless API with AWS Lambda and Terraform"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybcmbcb/"
+meetupNumber: "22"
 ---
 
 Presenter: Matt Karmazyn  

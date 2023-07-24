@@ -1,8 +1,10 @@
 ---
-title: 32. C-Suite Advice for Early Career Technologists
+slug: "2022-11-17-c-suite-advice-for-early-career-technologists"
+title: "C-Suite Advice for Early Career Technologists"
 date: "2022-11-17T22:12:03.284Z"
 description: "Guest Panel featuring Luke Deryckx, Meka Egwuekwe, and Danny Thompson share advice for early career technologists"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/289099436/"
+meetupNumber: "32"
 ---
 
 This month we'll have some very special guests at DevMemphis to share advice for early career technologists.

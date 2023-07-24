@@ -1,8 +1,10 @@
 ---
-title: 30. OpenAPI for Fun and Profit
+slug: "2022-09-07-fast-api-open-api"
+title: "OpenAPI for Fun and Profit"
 date: "2022-09-07T22:12:03.284Z"
 description: "explore an example of using Python’s FastAPI web framework to create an API that is self-documenting and use OpenAPI Generator and data-model-code-generator to auto-generate client code that talks with the API"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/287728191/"
+meetupNumber: "30"
 ---
 
 OpenAPI for Fun and Profit

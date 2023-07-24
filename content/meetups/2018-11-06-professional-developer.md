@@ -1,8 +1,10 @@
 ---
-title: "3. Being a professional developer"
+slug: "2018-11-06-professional-developer"
+title: "Being a professional developer"
 date: "2018-11-06T22:12:03.284Z"
 description: "This month at DevMemphis, Joe Ferguson will be joined by three other experienced software developers from the Memphis area for a round table discussion about being a professional developer."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/255694030/"
+meetupNumber: "3"
 ---
 
 This month at DevMemphis, Joe Ferguson will be leading a round table discussion about being a professional developer. Joe will be joined by three other experienced software developers from the Memphis area. This is a chance to have an open conversation with successful programmers about what it means to be a developer. This event is free and open to everyone interested.

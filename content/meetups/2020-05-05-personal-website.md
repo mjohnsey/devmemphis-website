@@ -1,8 +1,10 @@
 ---
-title: "18. Personal websites for software developers"
+slug: "2020-05-05-personal-website"
+title: "Personal websites for software developers"
 date: "2020-05-05T22:12:03.284Z"
 description: "Presenter: George Spake - Discussion about personal websites for developers"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybchbhb/"
+meetupNumber: "18"
 ---
 
 Speaker:

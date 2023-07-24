@@ -1,8 +1,10 @@
 ---
-title: 28. The State of State Management in Web Applications
+slug: "2021-09-07-web-app-state"
+title: "The State of State Management in Web Applications"
 date: "2021-09-07T22:12:03.284Z"
 description: "How did state management become such a hot topic in web application development in such a short time - or was it there all along?"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklryccmbkb/"
+meetupNumber: "28"
 ---
 
 Talk Description:

@@ -1,8 +1,10 @@
 ---
-title: "4. Text Editor Show & Tell"
+slug: "2019-02-05-text-editors"
+title: "Text Editor Show & Tell"
 date: "2019-02-05T22:12:03.284Z"
 description: "This month at DevMemphis, share your favorite features, customizations, tips and tricks of your preferred text editor or IDE."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/hxxpfqyzdbhb/"
+meetupNumber: "4"
 ---
 
 Thor wielded a mighty hammer, Great musicians employ their craft with the help of musical instruments.

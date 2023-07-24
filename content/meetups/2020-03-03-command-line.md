@@ -1,8 +1,10 @@
 ---
-title: "16. Command Line Crash Course"
+slug: "2020-03-03-command-line"
+title: "Command Line Crash Course"
 date: "2020-03-03T22:12:03.284Z"
 description: "Presenter: George Spake - This month we'll be talking about leveling up your command line skills, something every software developer should strive for."
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/wvmklrybcfbfb/"
+meetupNumber: "16"
 ---
 
 Presenter:  

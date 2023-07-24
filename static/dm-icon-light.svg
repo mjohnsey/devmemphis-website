@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.59 498.2">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="logo-bg">
+      <ellipse cx="245.79" cy="241.67" rx="245.79" ry="241.67" style="fill: #0ab37d"/>
+    </g>
+    <g id="Layer_31" data-name="Layer 31">
+      <ellipse cx="245.79" cy="241.67" rx="245.79" ry="241.67" style="fill: #82a2d5"/>
+      <text transform="translate(197.41 284.61)" style="font-size: 12px;fill: #231f20;font-family: MyriadPro-Regular, Myriad Pro">#81a3da</text>
+    </g>
+    <g id="M_White_copy" data-name="M White copy">
+      <polygon points="262.03 197.81 325 216.18 335.82 238.82 359.34 187.68 338.77 73.9 312.07 136.21 160.66 208.97 23.86 165.62 52.63 252.6 136.85 301.46 262.03 197.81" style="fill: #344073"/>
+    </g>
+    <g id="D_copy_2" data-name="D copy 2">
+      <polygon points="145.4 140 166.15 145.4 259.48 104.33 266.3 88.25 145.4 140" style="fill: #344073"/>
+    </g>
+    <g id="M_Dark_copy" data-name="M Dark copy">
+      <polygon points="97.47 319.5 102.29 391.75 171.23 423.25 248.71 343.92 251.19 459.78 335.28 498.2 469.88 312.33 471.83 244.44 334.78 417.12 251.19 382.73 325.78 302.32 264.41 312.24 246.5 274.69 167.55 348.19 97.47 319.5" style="fill: #344073"/>
+    </g>
+    <g id="M_White" data-name="M White">
+      <polygon points="97.47 319.5 262.03 183.25 325 201.61 341.1 235.31 399.14 223.24 471.83 244.44 334.78 417.12 251.19 382.73 325.78 302.32 264.41 312.24 246.5 274.69 167.55 348.19 97.47 319.5" style="fill: #82a2d5"/>
+    </g>
+  </g>
+</svg>
