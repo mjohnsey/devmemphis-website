@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { CalendarIcon } from "@heroicons/react/24/solid";
 
 type MeetupProps = {
-  meetup: Queries.MeetupsPageQuery["allMarkdownRemark"]["edges"][0]["node"];
+  meetup: Queries.MeetupsPageQuery["upcomingMeetups"]["edges"][0]["node"];
 };
 
 export const FutureMeetupLink = ({ meetup }: MeetupProps) => (
@@ -28,11 +28,12 @@ export const FutureMeetupLink = ({ meetup }: MeetupProps) => (
       </div>
     </div>
 
-    <button
-      className="bg-rose-500 text-white active:bg-rose-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+    <Link
+      to={meetup?.frontmatter?.meetupLink || ""}
+      className="bg-rose-500 text-white active:bg-rose-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-2 inline-block ease-linear transition-all duration-150"
       type="button"
     >
       RSVP on Meetup.com
-    </button>
+    </Link>
   </div>
 );

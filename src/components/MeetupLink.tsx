@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { CalendarIcon } from "@heroicons/react/24/solid";
 
 type MeetupProps = {
-  meetup: Queries.MeetupsPageQuery["allMarkdownRemark"]["edges"][0]["node"];
+  meetup: Queries.MeetupsPageQuery["upcomingMeetups"]["edges"][0]["node"];["node"];
 };
 
 export const MeetupLink = ({ meetup }: MeetupProps) => (
