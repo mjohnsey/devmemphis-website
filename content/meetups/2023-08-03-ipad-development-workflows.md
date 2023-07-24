@@ -1,7 +1,7 @@
 ---
-slug: "2023-08-02-ipad-development-workflows"
+slug: "2023-08-03-ipad-development-workflows"
 title: "Building Software On An iPad, the Overly Exhaustive Guide"
-date: "2023-08-02T22:12:03.284Z"
+date: "2023-08-03T22:12:03.284Z"
 description: "Cameron Roe will discuss how you can be a productive developer with an iPad"
 meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/294141470/"
 meetupNumber: "38"
