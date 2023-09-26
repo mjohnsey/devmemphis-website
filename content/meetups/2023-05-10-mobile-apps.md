@@ -7,8 +7,6 @@ meetupLink: "https://www.meetup.com/memphis-technology-user-groups/events/292720
 meetupNumber: "36"
 ---
 
-
-
 Talk Synopsis
 
 Keeping up with the headlines on generative AI can be overwhelming, but the key takeaway is this: don't fear losing your job as a software developer.
