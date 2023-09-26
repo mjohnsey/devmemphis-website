@@ -13,3 +13,14 @@ exports.onCreatePage = ({ page, actions }) => {
     },
   });
 };
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createRedirect } = actions
+
+  createRedirect({
+    fromPath: `/meetups/40th`,
+    toPath: `/meetups/2023-10-11-devmemphis-extravaganza`,
+    redirectInBrowser: true,
+    isPermanent: true
+  })
+}
