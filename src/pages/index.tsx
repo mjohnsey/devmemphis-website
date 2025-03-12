@@ -1,7 +1,7 @@
 import React from "react";
 import { PostLink } from "../components/PostLink";
 import { MeetupLink } from "../components/MeetupLink";
-import { graphql, PageProps } from "gatsby";
+import { graphql, Link, PageProps } from "gatsby";
 import { Layout } from "../components/Layout";
 import { ContentContainer } from "../components/ContentContainer";
 import { Footer } from "../components/Footer";
@@ -66,12 +66,12 @@ const IndexPage = ({ data }: PageProps<Queries.HomePageQuery>) => {
             </h2>
             {Meetups}
             <div>
-              <button
+              <Link
                 className="dark:text-emerald-500 text-san-juan-900 border dark:border-emerald-500 border-san-juan-900 dark:hover:bg-emerald-500 hover:bg-san-juan-900 dark:hover:text-white hover:text-white dark:active:bg-emerald-600 active:bg-san-juan-800 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                type="button"
+                to="/meetups"
               >
                 All Meetups <ArrowSmallRightIcon className="h-4 w-4 inline" />
-              </button>
+              </Link>
             </div>
           </ContentContainer>
         </div>
@@ -103,12 +103,12 @@ const IndexPage = ({ data }: PageProps<Queries.HomePageQuery>) => {
             <div className="flex gap-6">{Posts}</div>
             <div>
               <div>
-                <button
+                <Link
                   className="dark:text-emerald-500 text-san-juan-900 border dark:border-emerald-500 border-san-juan-900 dark:hover:bg-emerald-500 hover:bg-san-juan-900 dark:hover:text-white hover:text-white dark:active:bg-emerald-600 active:bg-san-juan-800 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                  type="button"
+                  to="/blog"
                 >
                   Blog <ArrowSmallRightIcon className="h-4 w-4 inline" />
-                </button>
+                </Link>
               </div>
             </div>
           </ContentContainer>
